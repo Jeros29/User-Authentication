@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --main-bg-colour: #3D4348;
+    --modal-bg-colour: #50575E;
+    --border-colour: #707479;
+    --border-radius: 0.313rem;
+    --inner-padding: 0.5em 1em;
+}
+
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+html body {
+    box-sizing: inherit;
+    margin: inherit;
+    padding: inherit;
+
+    position: relative;
+    background: var(--main-bg-colour);
+}
+
+h1 {
+    margin-bottom: 3rem;
+
+    color: #FFF;
+
+    font-style: bold;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    letter-spacing: .05rem;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    width: 20%;
+    padding: 3em;
+
+    background-color: var(--modal-bg-colour);
+    border-radius: 1rem;
+
+    transform: translate(-50%, -50%);
+}
+
+label {
+    display: block;
+    margin-bottom: .75rem;
+
+    color: #EEE;
+
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+}
+
+label[for="email"] {}
+
+input {
+    width: 100%;
+    padding: var(--inner-padding);
+
+    background: none;
+    outline: none;
+    color: #DDD;
+
+    font-size: 1rem;
+    font-family: inherit;
+    letter-spacing: .05rem;
+
+    border: 0.063rem solid var(--border-colour);
+    border-radius: var(--border-radius);
+
+    transition: all 300ms ease;
+}
+
+input:focus {
+    outline: .125rem solid var(--border-colour);
+
+}
+
+.container div {
+    margin-bottom: 2rem;
+}
+
+button {
+    width: 100%;
+    margin: .5rem 0;
+    padding: .35em;
+
+    background: #D9D9D9;
+    border-radius: var(--border-radius);
+
+    outline: none;
+    border: none;
+
+    font-size: 1.125rem;
+    font-family: inherit;
+
+    transition: all 300ms ease;
+
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #BBB;
+}
+
+a {
+    color: #EEE;
+
+    font-size: 1rem;
+    letter-spacing: .05rem;
+
+    transition: all 300ms ease;
+}
+
+a:hover {
+    color: #CCC;
+
+}
